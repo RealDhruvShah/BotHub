@@ -81,7 +81,7 @@ async def _(event):
     USER_AFKB = {}
     afkb_time = None
     last_afkb_message = {}
-    afkb_end = {}
+    afkb_end = datetime.now().replace(microsecond=0)
     start_1 = datetime.now()
     afkb_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
